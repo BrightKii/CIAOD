@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\This is my CUMputer)\source\repos\СИАОД_6\СИАОД_6\Main.cpp(31,18): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\This is my CUMputer)\source\repos\СИАОД_6\СИАОД_6\Main.cpp(38,38): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  СИАОД_6.vcxproj -> C:\Users\This is my CUMputer)\source\repos\СИАОД_6\x64\Debug\СИАОД_6.exe
