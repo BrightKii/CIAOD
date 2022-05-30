@@ -49,14 +49,14 @@ void search(int* arr, int size) {
         if (arr[i] == symbol) {
             countIterations++;
             flag = 1;
-            cout << "Индекс элемента в массиве: ";
+            cout << "Г€Г­Г¤ГҐГЄГ± ГЅГ«ГҐГ¬ГҐГ­ГІГ  Гў Г¬Г Г±Г±ГЁГўГҐ: ";
             cout << i << endl;
-            cout << "Сравнений: " << countIterations;
+            cout << "Г‘Г°Г ГўГ­ГҐГ­ГЁГ©: " << countIterations;
             break;
         }
     }
     if (flag == 0) {
-        cout << "Числа нет в массиве, введите новое: ";
+        cout << "Г—ГЁГ±Г«Г  Г­ГҐГІ Гў Г¬Г Г±Г±ГЁГўГҐ, ГўГўГҐГ¤ГЁГІГҐ Г­Г®ГўГ®ГҐ: ";
         search(arr, size);
     }
 }
@@ -64,17 +64,17 @@ void search(int* arr, int size) {
 int main() {
     setlocale(0, "Rus");
     int size;
-    cout << "Введите размер массива: ";
+    cout << "Enter size of array: ";
     cin >> size;
     int* arr = new int[size];
 
     for (int i = 0; i < size; i++) {
         arr[i] = rand() % 100;
     }
-    cout << "Введите цифру для вида поиска числа в массиве:\n\
-        1 - поиск в массиве отсортированном массиве по возрастанию\n\
-        2 - поиск в массиве отсортированном массиве по убыванию\n\
-        3 - поиск в неотсортированном массиве" << endl;
+    cout << "Enter number to choose variant of search:\n\
+        1 - searching in an array sorted array in ascending order\n\
+        2 - search in an array sorted in descending orderГѕ\n\
+        3 - searching in an unsorted array" << endl;
     string choice;
     cin >> choice;
 
@@ -84,6 +84,6 @@ int main() {
     if (choice == "2") {
         reverseSort(arr, size);
     }
-    cout << "Введите число для поиска не больше 100: ";
+    cout << "Enter the nember which is not higher then 100: ";
     search(arr, size);
 }
