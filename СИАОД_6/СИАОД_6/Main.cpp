@@ -27,11 +27,11 @@ int main()
 	ifstream file;
 	file.open("D:\\test1.txt");
 	if (file){
-		file.seekg(0, file.end); // seekg - функци€, позвол€юща€ искать произвольную позицию в файле
-		int txt_length = file.tellg(); // tellg - возвращает текущую позицию в файле
-		file.seekg(0, file.beg); //beg - означает направление от начала файла
+		file.seekg(0, file.end);
+		int txt_length = file.tellg();
+		file.seekg(0, file.beg); 
 		char* txt = new char[txt_length];
-		file.get(txt, txt_length +1); // get - ввод данных из файла file в массив line, при этом он вводит туда length+1 элементов
+		file.get(txt, txt_length +1); 
 		cout << txt << endl;
 		string search;
 		cin >> search;
