@@ -78,25 +78,17 @@ void MergeSort(int* arr, int left, int right)
 int main(){
 	setlocale(LC_ALL, "rus");
 	int n;
-	cout << "Введите размер массива: ";
+	cout << "Enter size of array: ";
 	cin >> n;
 	int arr[nmax];
 	for (int i = 0; i < n; i++) {
 		arr[i] = rand() % 100;
 	}
-	//cout << "Исходный массив:\n";
-	//for (int i = 0; i < n; i++) {
-	//	cout << arr[i] << " ";
-	//}
 	cout << endl;
 	unsigned int start_time = clock();
 	MergeSort(arr, 0, n - 1);
 	unsigned int end_time = clock();
 	unsigned int search_time = start_time - end_time;
-	//cout << "Отсортированный массив:\n";
-	//for (int i = 0; i < n; i++) {
-	//	cout << arr[i] << " ";
-	//}
 	cout << endl;
 	cout << "Time: " << search_time << endl;
 	cout << "Swaps + Iterations: " << counterSwap + counterIterations;
