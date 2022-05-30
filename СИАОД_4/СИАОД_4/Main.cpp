@@ -49,14 +49,14 @@ void search(int* arr, int size) {
         if (arr[i] == symbol) {
             countIterations++;
             flag = 1;
-            cout << "Èíäåêñ ýëåìåíòà â ìàññèâå: ";
+            cout << "Index: ";
             cout << i << endl;
-            cout << "Ñðàâíåíèé: " << countIterations;
+            cout << "Iterations: " << countIterations;
             break;
         }
     }
     if (flag == 0) {
-        cout << "×èñëà íåò â ìàññèâå, ââåäèòå íîâîå: ";
+        cout << "no such number, choose another one: ";
         search(arr, size);
     }
 }
